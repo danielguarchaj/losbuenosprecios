@@ -1,1 +1,1 @@
-web: gunicorn losbuenosprecios.wsgi --log-file -
+web: gunicorn losbuenosprecios.wsgi
