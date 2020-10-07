@@ -1,1 +1,1 @@
-web: gunicorn elrayo.wsgi
+web: gunicorn losbuenosprecios.wsgi
