@@ -80,10 +80,21 @@ WSGI_APPLICATION = 'losbuenosprecios.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bvhwpvmeponyfrztfcne',
+        'USER': 'uilxp3dpc2jpm4zd',
+        'PASSWORD': 'JPhzt88aG6RLknBW7wX9',
+        'HOST': 'bvhwpvmeponyfrztfcne-mysql.services.clever-cloud.com',
+        'PORT': '3306',
     }
 }
 
