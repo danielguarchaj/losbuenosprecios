@@ -14,7 +14,7 @@ class Producto(models.Model):
     nombre = models.CharField(max_length=250)
     descripcion = models.CharField(max_length=500)
     existencias = models.IntegerField(default=0)
-    imagen = models.ImageField(upload_to='media/productos_imagenes/', null=True, blank=True)
+    imagen = models.ImageField(upload_to='losbuenosprecios/productos_imagenes/', null=True, blank=True)
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, related_name='productos')
     proveedor = models.ForeignKey(Proveedor, on_delete=models.CASCADE, related_name='productos')
 
